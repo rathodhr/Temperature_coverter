@@ -1,0 +1,130 @@
+<html>
+<head>
+<link rel="stylesheet"  href="style1.css">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    max-width: 450px;
+    background: rgb(98, 63, 179);
+   border-radius: 8px;
+   box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.4);
+   font-family: sans-serif;
+   padding: 20px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+.temperature-icon{
+    font-size: 45px;
+    color: #fff;
+}
+h1{
+    color:#fff;
+    letter-spacing: 1.2px;
+    font-size: 30px;
+}
+#celsius, #fahrenheit,#kelvin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+input{
+    flex: 5;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: none;
+    padding: 0 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+
+}
+input{ -moz-appearance : textfield;
+}
+.icon{
+    flex:1;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 30px;
+    background: #4d5964;
+    color:#fff;
+    border-radius: 0 8px 8px 0;
+}
+.button{
+    margin-top: 25px;
+    text-align: center;
+}
+.button button{
+    border:none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button button:hover{
+    background:#000;
+    color: #fff;
+}
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Temprature converter</h1>
+         <span class="Temprature-icon"><i class="fa-solid fa-temperrature-three-quarters"> </i></span>
+        </div>
+
+
+      <div id="celsius">
+            <input type="number" name="" placeholder="Celsius">
+            <span class="icon">&#8451</span>
+
+      </div>
+      <div id="fahrenheit">
+             <input type="number" name="" placeholder="Fahrenheit">
+            <span class="icon">&#8457</span>
+
+     </div>
+     <div id="kelvin">
+            <input type="number" name="" placeholder="Kelvin">
+            <span class="icon">&#8490</span>
+
+     </div>
+     <div class="button">
+            <button>All clear</button>
+     </div>
+
+
+    </div>
+   <script src="temp.js"></script>
+    </body>
+
+
+
+
+</html>
